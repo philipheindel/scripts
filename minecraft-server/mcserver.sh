@@ -1,7 +1,9 @@
 #!/bin/bash
 
+# https://askubuntu.com/questions/506909/how-can-i-accept-the-lience-agreement-for-steam-prior-to-apt-get-install/1017487#1017487
 echo steam steam/question select "I AGREE" | sudo debconf-set-selections
 
+# https://askubuntu.com/questions/506909/how-can-i-accept-the-lience-agreement-for-steam-prior-to-apt-get-install/1017487#1017487
 echo steam steam/license note '' | sudo debconf-set-selections
 
 yes | dpkg --add-architecture i386; 
